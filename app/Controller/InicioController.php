@@ -29,7 +29,7 @@ class InicioController extends AppController{
         }
     }
     
-    //comentario
+    //comentario nuevo en el repositorio
     
 }
 
