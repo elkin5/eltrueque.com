@@ -1,12 +1,4 @@
-<font size="2">
-    <?php 
-	//Miga de Pan
-	$items = array(
-		array('title' => 'Registro ', 'link' => ''),
-	);
-	echo $this->element('crumbs1', array('items' => $items));
-?>
-</font>
+
 <center>
     <br/>
     <br/>

@@ -15,6 +15,13 @@ class Product extends AppModel{
     
     public $name = "Product";
     
+    public $belongsTo = array(
+        'User' => array(
+            'className'    => 'User',
+            'foreignKey'   => 'user_id'
+        )
+    );
+    
     var $actsAs = array(
         'MeioUpload' => array('filename')
     );
