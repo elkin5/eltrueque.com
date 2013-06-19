@@ -15,6 +15,13 @@ class User extends AppModel{
     //put your code here
     
     public $name = 'User';
+    public $hasMany = array(
+        'Product' => array(
+            'className'     => 'Product',
+            'foreignKey'    => 'user_id',
+            'dependent'     => true
+        )
+    );
     
     public function beforeSave($options = array()) {
         if (isset($this->data[$this->alias]['password'])) {

@@ -21,19 +21,10 @@
 </head>
 <body>
 <div class="content">
-   <table>
-        <tr>
-            <td>
-   <!-- <img src= "webroot/img/baner.png" border="0" width="820" height="90" />-->
-                <img width="975" height="90" <?php echo $this->html->image('baner.png');?> 
-    </td>
-        
-        </tr>
-    </table>
-  
+  <div class="header">
     <div class="logo">
-       
-   
+      <h1><a href="">el<span class="orange">trueque.com</span></a><sup>beta</sup></h1>
+    </div>
   </div>
   <div class="bar">
     <ul>

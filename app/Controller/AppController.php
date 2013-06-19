@@ -51,6 +51,6 @@ class AppController extends Controller {
     }
      
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view', 'search', 'login', 'searchini');
+        $this->Auth->allow('index', 'view', 'search', 'login', 'searchini', 'add');
     }
 }

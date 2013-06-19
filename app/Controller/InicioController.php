@@ -15,7 +15,7 @@ class InicioController extends AppController{
     
     public function index(){
         
-        $this->set('title_for_layout', 'Pagina Principal');
+        $this->set('title_for_layout', 'index');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }
@@ -28,12 +28,6 @@ class InicioController extends AppController{
             $this->layout = 'registred';
         }
     }
-    
-    //comentario nuevo en el repositorio
-    
-    // nuevo repositorio
-    
-    
 }
 
 ?>

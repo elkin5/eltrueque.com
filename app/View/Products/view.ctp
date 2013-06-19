@@ -9,7 +9,7 @@
     <br>
     Producto: <?php echo $product['Product']['nombre']?>
     <br>
-    Usuario: <?php echo $product['Product']['user_id'];?>
+    Usuario: <?php echo $product['User']['nombre'];?>
     <br>
     Descripcion: <?php echo $product['Product']['descripcion']?>
     <br>

@@ -13,7 +13,7 @@
                     array("alt" => $product['Product']['nombre'], "title" => $product['Product']['nombre'], "border" => "0")),
                     '/products/view/'.$product['Product']['id'] , array('escape' => false)); ?></td>
             <td><?php echo $product['Product']['descripcion']; ?></td>
-            <td><?php echo $this->Html->link("Enviar Oferta", array("action" => "edit", $product["Product"]["id"]));?></td>
+            <td><?php echo $this->Html->link("Enviar Oferta se", array('controller' => 'Ofertas', "action" => "add"));?></td>
         </tr>
             <?php endforeach; ?>
     </table>
