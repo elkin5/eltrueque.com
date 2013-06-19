@@ -1,4 +1,13 @@
-
+<font size="2">
+    <?php 
+	//Miga de Pan
+	$items = array(
+		array('title' => 'Gestion Usuarios', 'link' => ''),
+	);
+	echo $this->element('crumbs', array('items' => $items));
+	
+?>
+</font>
 
 <?php echo $this->Html->link('Agregar Usuario', array('controller' => 'users', 'action' => 'add')); ?>
 <center>

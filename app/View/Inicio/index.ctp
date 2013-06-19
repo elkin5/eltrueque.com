@@ -4,13 +4,14 @@
 </head>
 <body>
 <center>
-    <legend><h1> Bienvenidos a ElTrueque.com</h1></legend><br/>
+    <legend><h1> Bienvenidos a ElTrueque.com</h1></legend></center><br/>
     <p>
         <font size="2">ElTrueque.com es un sistema de intercambio de objetos y/o servicios, en donde no hay dinero de por medio.<br/>
               puedes conseguir lo que necesitas con lo que ya no utilizas.</font>
         <br/><br/>
     </p>
    <center><b><font size="2"> Categorias de los productos </font></b></center> <br><br/>
+   <font size="2">
    <table>
     <tr> 
         <td>
@@ -42,6 +43,7 @@
    </tr>
  
    </table>
+     </font>
 </center>
 </body>
 </html>

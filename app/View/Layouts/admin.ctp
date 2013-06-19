@@ -21,18 +21,19 @@
 </head>
 <body>
 <div class="content">
+    <table>
+        <tr>
+            <td>
+   
+                <img width="975" height="90" <?php echo $this->html->image('baner.png');?> 
+    </td>
+        </tr>
+    </table>
+    <div align="right">
+        <p><?php echo $this->html->link('Cerrar Sesion', array ('controller'=>'Users','action'=>'logout'));?></p>
+    </div>
   <div class="header">
-      <div class="top_info">
-      <div class="top_info_right">
-          <p><?php echo $this->html->link('Cerrar Sesion', array ('controller'=>'Users','action'=>'logout'));?></p>
-      </div>
-      
-    </div>
-      
-    <div class="logo">
-      <h1><a href="">el<span class="orange">trueque.com</span></a><sup>beta</sup></h1>
-    </div>
-  </div>
+     
   <div class="bar">
     <ul>
       <li><a href="/eltrueque.com/inicio">Inicio</a></li>

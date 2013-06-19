@@ -62,7 +62,7 @@
     </p>
   </div>
   <div class="right">
-    <h3>Ingresar</h3>
+    <h3><font size="2"><center>Ingresar</center></font></h3>
     <div class="right_articles">
         <p><center>
                 <?php echo $this->html->link($this->html->image('icono_login1.png', 
@@ -72,9 +72,9 @@
                 ?>
            </center></p>
     </div>
-    <h3>Registrarse</h3>
+    <h3><font size="2"><center>Registrarse</center></font></h3>
     <div class="right_articles">
-        <p>para obtener acceso a cada uno de nuestros servicios debe de estar registrado</p>
+        <p><font size="2">para obtener acceso a cada uno de nuestros servicios debe de estar registrado</font></p><br>
         <p><center>
             <?php echo $this->html->link($this->html->image('icono_registro.png', 
                     array("alt" => 'Registrarse', "title" => 'Registrarse', "border" => "0")),

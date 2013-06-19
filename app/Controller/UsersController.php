@@ -41,7 +41,7 @@ class UsersController extends AppController{
     }
 
     function index() {
-        $this->set('title_for_layout', 'index');
+        $this->set('title_for_layout', 'Gestion de usuarios');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }
