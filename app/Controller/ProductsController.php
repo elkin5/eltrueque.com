@@ -16,7 +16,7 @@ class ProductsController extends AppController{
     public $helpers = array ("Html","Form");
     
     public function index() {
-        $this->set('title_for_layout', 'index');
+        $this->set('title_for_layout', 'Mis Productos');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }
@@ -52,7 +52,7 @@ class ProductsController extends AppController{
     }
 
     public function view($id = null) {
-        $this->set('title_for_layout', 'ver producto');
+        $this->set('title_for_layout', 'Descripcion Producto');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }
@@ -69,7 +69,7 @@ class ProductsController extends AppController{
     }
 
     public function add() {
-        $this->set('title_for_layout', 'agregar producto');
+        $this->set('title_for_layout', 'Agregar Producto');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }
@@ -223,6 +223,7 @@ class ProductsController extends AppController{
     }
     
     public function searchview(){
+        $this->set('title_for_layout', 'Busqueda Avanzada');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }

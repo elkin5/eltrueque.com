@@ -1,28 +1,32 @@
-<br>
-<br>
+<font size="2">
+    <?php 
+	//Miga de Pan
+	$items = array(
+		array('title' => ' Mis Productos ', 'link' => '/products/index'),
+            array('title' => ' Descripcion ', 'link' => '')
+	);
+	echo $this->element('crumbs', array('items' => $items));
+	
+?>
+<br><br>
 <center>
-    <h3>Descripcion del Producto</h3> 
-    <br>
-    <br>
+    
     <font size="2">
-        <?php echo $this->html->image('uploads/product/filename/'.$product['Product']['filename']);?>
-    <br>
-    Producto: <?php echo $product['Product']['nombre']?>
-    <br>
-    Usuario: <?php echo $product['User']['nombre'];?>
-    <br>
-    Descripcion: <?php echo $product['Product']['descripcion']?>
-    <br>
-    Preferencia para el cambio: <?php echo $product['Product']['preferencia']?> 
-    <br>
-    Categoria: <?php echo $product['Product']['categoria']?>
-    <br> 
-    Fecha Ingreso:b <?php echo $product['Product']['created']?>
-    <br> 
-    <br>
-    <br>
-    <br>
-        <?php echo $this->Html->link('Volver', array('controller' => 'Products', 'action' => 'index')); ?>
+    <table>
+           <tr>
+               <td>
+              <?php echo $this->html->image('uploads/product/filename/'.$product['Product']['filename']);?><br><br>
+    </td> <td></td><td></td>
+    <td>
+        <b> Producto:</b> <?php echo $product['Product']['nombre']?><br>
+        <b>Usuario:</b> <?php echo $product['User']['nombre'];?><br>
+        <b>Descripcion:</b> <?php echo $product['Product']['descripcion']?><br>
+        <b> Preferencia para el cambio: </b><?php echo $product['Product']['preferencia']?><br>
+        <b> Categoria:</b> <?php echo $product['Product']['categoria']?><br> 
+        <b> Fecha Ingreso:</b> <?php echo $product['Product']['created']?><br><br><br><br>
+    </td>
+    </tr>
+</table>
     
     </font>
 </center>

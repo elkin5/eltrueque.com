@@ -101,7 +101,7 @@ class UsersController extends AppController{
     }
 
     function edit($id = null) {
-        $this->set('title_for_layout', 'Editar Usuario');
+        $this->set('title_for_layout', 'Editar Perfil');
         if ($this->Auth->user('role') == NULL){
              $this->layout = 'unregistred';
         }
@@ -155,7 +155,11 @@ class UsersController extends AppController{
         $this->Session->setFlash(__('Usuario no puede ser eliminado'));
         $this->redirect(array('action' => 'index'));
     }
-    
+    function correo() {
+        $this->set('title_for_layout', 'Recuperacion de contraseña');
+        $this->layout = 'unregistred';
+        $this->set('users', $this->User->find('all'));
+    }
     public function isAuthorized($user) {
         // Todos los usuarios registrados pueden agregar productos
         if ($this->action === 'logout') {

@@ -21,18 +21,18 @@
 </head>
 <body>
 <div class="content">
+    <table>
+        <tr>
+            <td>
+   
+                <img width="975" height="90" <?php echo $this->html->image('baner.png');?> 
+    </td>
+        </tr>
+    </table>
+    
   <div class="header">
-      <div class="top_info">
-      <div class="top_info_right">
-          <p><?php echo $this->html->link('Cerrar Sesion', array ('controller'=>'Users','action'=>'logout'));?></p>
-      </div>
-      
-    </div>
-      
-    <div class="logo">
-      <h1><a href="">el<span class="orange">trueque.com</span></a><sup>beta</sup></h1>
-    </div>
-  </div>
+     
+  
   <div class="bar">
     <ul>
       <li><a href="/eltrueque.com/inicio">Inicio</a></li>
@@ -63,6 +63,7 @@
  <div class="right">     
    <center> <h3>Mi Menu</h3></center>
    <div class="right_articles">
+       <font size="2"> <p><?php echo $this->html->link('Cerrar Sesion', array ('controller'=>'Users','action'=>'logout'));?></p></font>
        <center> 
            <?php echo $this->html->link($this->html->image('products_icon.jpg', 
                     array("alt" => 'Mis Productos', "title" => 'Mis Productos', "border" => "0")),
@@ -93,11 +94,11 @@
        <center> 
            <?php echo $this->html->link($this->html->image('icon_micuenta.png', 
                     array("alt" => 'Mi Cuenta', "title" => 'Mi Cuenta', "border" => "0")),
-                    '/products/add/', array('escape' => false));
+                    '/Users/edit/', array('escape' => false));
             ?>
        </center>                                      
     </div>
-  </div>   
+  </div> 
  
   <div class="footer">
     <p><a href="http://www.free-css.com/">Trueque</a> | <a href="http://www.free-css.com/">Permuta</a> | <a href="http://www.free-css.com/">Terminos de uso</a> | <a href="/eltrueque.com/inicio">Inicio</a> | <a href="http://www.free-css.com/">Disclaimer</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">Refarencias</a>

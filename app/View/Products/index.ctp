@@ -1,4 +1,4 @@
-
+<font size="2">
 <?php
 $items = array(array('title' => ' Mis Productos ', 'link' => ''));
 echo $this->element('crumbs', array('items' => $items));
@@ -6,8 +6,9 @@ $color[0]="#D1DBE1";
 $color[1]="#E2EBF0";
 $i=0; 
 ?>
+</font>
 <center> 
-    <legend><h3>Mis Productos</h3></legend>
+    
     <br>
     <br>
     <table border = "1" width="500" style="font-size:12px" >
